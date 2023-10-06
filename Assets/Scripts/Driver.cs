@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-internal sealed class Driver : Employee
+internal sealed class Driver : Employee, MonoBehaviour
 {
     private string Brand { get; set; }
         
