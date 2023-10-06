@@ -1214,3 +1214,53 @@ Received Import Request.
   path: Assets/Scripts/Add.cs
   artifactKey: Guid(449ed76f8a15c3644a8cb798d848ebc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Add.cs using Guid(449ed76f8a15c3644a8cb798d848ebc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44ab6f7aca391a0d348257f11e5f977') in 0.048979 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.206595 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.455 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.5 MB.
+System memory in use after: 140.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3689.
+Total: 9.915500 ms (FindLiveObjects: 0.401700 ms CreateObjectMapping: 0.615000 ms MarkObjects: 8.754100 ms  DeleteObjects: 0.141000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 55036.496953 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3389c8317132f5f1fc7d1371938ea122') in 0.014851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3017.023411 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00154034f23c06e2ad37f76c492cfccd') in 0.006771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 431.304817 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4cb35c31d60df58fe1f5192979c5df') in 0.011630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.483232 seconds.
+  path: Assets/Scripts/Employee.cs
+  artifactKey: Guid(d59d91abc3ed78443986caeec3eaeed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Employee.cs using Guid(d59d91abc3ed78443986caeec3eaeed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218982e93723287b94ee78a81179b90f') in 0.014166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.418209 seconds.
+  path: Assets/Scripts/Driver.cs
+  artifactKey: Guid(eb571d8d6ec0ee448ada8d96bec7971a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Driver.cs using Guid(eb571d8d6ec0ee448ada8d96bec7971a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d76b508f5dc473474bd27cd89c5e55') in 0.082517 seconds 
