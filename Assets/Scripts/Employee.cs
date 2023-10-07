@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Employee : Human, MonoBehaviour
+public class Employee : IHuman, MonoBehaviour
 {
     private string Company { get; set; }
     
