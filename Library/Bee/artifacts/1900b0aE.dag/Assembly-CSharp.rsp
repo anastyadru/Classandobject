@@ -324,6 +324,7 @@
 "Assets/Scripts/Driver.cs"
 "Assets/Scripts/Edit.cs"
 "Assets/Scripts/Employee.cs"
+"Assets/Scripts/Human.cs"
 "Assets/Scripts/Menu.cs"
 "Assets/Scripts/Student.cs"
 -langversion:8.0
