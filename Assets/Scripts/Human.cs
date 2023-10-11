@@ -34,7 +34,7 @@ public class Human : IHuman, MonoBehaviour
      	BirthDate = birth;
     }
 
-    private int CalculateAge()
+    public int CalculateAge()
     {
      	var age = DateTime.Now.Year - BirthDate.Year;
      	if (DateTime.Now.Month < BirthDate.Month || (DateTime.Now.Month == BirthDate.Month && DateTime.Now.Day < BirthDate.Day))
@@ -42,7 +42,7 @@ public class Human : IHuman, MonoBehaviour
      	return age;
     }
 
-    protected string Print()
+    public string Print()
     {
     	return $"Фамилия: {Surname}, Имя: {Name}, Отчество: {Patronymic}, Дата рождения: {BirthDate}, Возраст: {CalculateAge()}";
     }
@@ -79,7 +79,7 @@ public class Human : IHuman, MonoBehaviour
             }
         }
 
-	protected virtual void Display()
+	public virtual void Display()
 	{
      	Console.WriteLine($"ФИО: {Surname} {Name} {Patronymic}");
      	Console.WriteLine($"Возраст: {CalculateAge()}");

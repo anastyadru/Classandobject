@@ -53,7 +53,7 @@ public class Employee : IHuman, MonoBehaviour
         }
     }
 
-    protected override void Display()
+    public override void Display()
     {
         base.Display();
         Console.WriteLine($"Компания: {Company}");

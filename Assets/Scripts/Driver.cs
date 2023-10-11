@@ -44,7 +44,7 @@ internal sealed class Driver : Employee, MonoBehaviour
         }
     }
 
-    protected override void Display()
+    public override void Display()
     {
         base.Display();
         Console.WriteLine($"Бренд: {Brand}");

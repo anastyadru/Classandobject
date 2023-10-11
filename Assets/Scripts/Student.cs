@@ -52,7 +52,7 @@ public class Student : IHuman, MonoBehaviour
         }
     }
 
-    protected override void Display()
+    public override void Display()
     {
         base.Display();
         Console.WriteLine($"Факультет: {Faculty}");
