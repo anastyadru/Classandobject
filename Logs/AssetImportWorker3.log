@@ -72,3 +72,15 @@ Received Import Request.
   path: Assets/Scripts/Human.cs
   artifactKey: Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Human.cs using Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e6b71fdf8cec2062fcc039eae5de9e') in 0.044975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1147.870763 seconds.
+  path: Assets/Scripts/Human.cs
+  artifactKey: Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Human.cs using Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13d50fc8551935b3d2ec22947abb453') in 0.080392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 157.428432 seconds.
+  path: Assets/Scripts/Human.cs
+  artifactKey: Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Human.cs using Guid(24dbdc19ecc0afb4e8d6ae4cee407738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268ea095fba724a345b8928b4b3d0d41') in 0.007792 seconds 
