@@ -15,11 +15,11 @@ G:/Учеба/C#/Unity задачи/Classandobject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51709
+55405
 Successfully changed project path to: G:/Учеба/C#/Unity задачи/Classandobject
 G:/Учеба/C#/Unity задачи/Classandobject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 268.05 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 207.97 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,16 +35,65 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010473 seconds.
+Registered in 0.008662 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 185.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 186.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  9.128 seconds
+- Completed reload, in  4.718 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.101864 seconds.
+Registered in 0.010242 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.694 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3126.
+Total: 4.346900 ms (FindLiveObjects: 0.429900 ms CreateObjectMapping: 0.400000 ms MarkObjects: 3.373900 ms  DeleteObjects: 0.140000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6ebc57f65dd6303c6283d8415c7140') in 0.076532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19827.931026 seconds.
+  path: Assets/Scripts/Program.cs
+  artifactKey: Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Program.cs using Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38c7cb9e5aaadb56c95ff0a244547fb') in 0.021049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.819280 seconds.
+  path: Assets/Scripts/Program.cs
+  artifactKey: Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Program.cs using Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acab4c406942ca1ad355742fb8c86eaf') in 0.005420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 169.454861 seconds.
+  path: Assets/Scripts/Program.cs
+  artifactKey: Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Program.cs using Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5f9fb4d9f1a067b8541b81ac438362') in 0.007652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.079419 seconds.
+  path: Assets/Scripts/Program.cs
+  artifactKey: Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Program.cs using Guid(7ad5c9fafa1d7cb45b930746f51a4c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c45ad6619bc7b0b36bbe5b865f5371') in 0.089588 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
