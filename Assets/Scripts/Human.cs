@@ -4,7 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Human : MonoBehaviour
+public interface IHuman
+{
+    string Surname { get; set; }
+    string Name { get; set; }
+    string Patronymic { get; set; }
+    DateTime BirthDate { get; set; }
+
+    string Print();
+    void Edit();
+    void Display();
+}
+
+public class Human : IHuman, MonoBehaviour
 {
 	public string Surname { get; set; }
 
@@ -14,7 +26,7 @@ public class Human : MonoBehaviour
 
     private DateTime BirthDate { get; set; }
 
-    protected Human(string surname, string name, string patronymic, DateTime birth) // создала конструктор с параметрами
+    protected Human(string surname, string name, string patronymic, DateTime birth)
     {
     	Surname = surname;
     	Name = name;
@@ -22,7 +34,7 @@ public class Human : MonoBehaviour
      	BirthDate = birth;
     }
 
-    private int CalculateAge() // высчитала возраст на данный момент
+    private int CalculateAge()
     {
      	var age = DateTime.Now.Year - BirthDate.Year;
      	if (DateTime.Now.Month < BirthDate.Month || (DateTime.Now.Month == BirthDate.Month && DateTime.Now.Day < BirthDate.Day))
