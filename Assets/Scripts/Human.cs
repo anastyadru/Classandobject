@@ -16,7 +16,7 @@ public interface IHuman
     void Display();
 }
 
-public class Human : IHuman, MonoBehaviour
+public class Human : MonoBehaviour, IHuman
 {
 	public string Surname { get; set; }
 
