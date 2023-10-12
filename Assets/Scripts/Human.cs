@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 public interface IHuman
 {
     string Surname { get; set; }
+
     string Name { get; set; }
+
     string Patronymic { get; set; }
+
     DateTime BirthDate { get; set; }
 
     string Print();
