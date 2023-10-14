@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Employee : Human, MonoBehaviour
+public class Employee : Human
 {
     public string Company { get; set; }
     
