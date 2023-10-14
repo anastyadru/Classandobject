@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Student : MonoBehaviour, IHuman
+public class Student : Human, MonoBehaviour
 {
     public string Faculty { get; set; }
         

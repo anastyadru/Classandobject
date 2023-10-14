@@ -4,20 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public interface IEmployee
-{
-    string Company { get; set; }
-
-    int Salary { get; set; }
-
-    int Experience { get; set; }
-
-    string Print();
-    void Edit();
-    void Display();
-}
-
-public class Employee : MonoBehaviour, IEmployee, IHuman
+public class Employee : Human, MonoBehaviour
 {
     public string Company { get; set; }
     
