@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-internal sealed class Driver : MonoBehaviour, Employee
+internal sealed class Driver : MonoBehaviour, IEmployee
 {
     private string Brand { get; set; }
         
