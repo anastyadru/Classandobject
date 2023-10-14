@@ -62,7 +62,7 @@ public class Student : Human
 
     // public void OnAddButtonClicked()
     // {
-        // Debug.Log($"{base.Print()}, Факультет: {Faculty}, Курс: {Course}, Группа: {Group}");
+        // Debug.Log("Данные студента добавлены:\n" + student.Print());
     // }
 
 	// public void OnEditButtonClicked()
