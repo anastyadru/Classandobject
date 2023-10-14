@@ -59,5 +59,20 @@ public class Student : Human
         Console.WriteLine($"Курс: {Course}");
         Console.WriteLine($"Группа: {Group}");
     }
-    
-} 
+
+    // public void OnAddButtonClicked()
+    // {
+        // Debug.Log($"{base.Print()}, Факультет: {Faculty}, Курс: {Course}, Группа: {Group}");
+    // }
+
+	// public void OnEditButtonClicked()
+    // {
+
+	// }
+
+	// public void OnDeleteButtonClicked()
+    // {
+
+	// }
+
+}    
