@@ -23,13 +23,13 @@ public class Human : MonoBehaviour, IHuman
 {
 	public string Surname { get; set; }
 
-    private string Name { get; set; }
+    public string Name { get; set; }
 
-    private string Patronymic { get; set; }
+    public string Patronymic { get; set; }
 
-    private DateTime BirthDate { get; set; }
+    public DateTime BirthDate { get; set; }
 
-    protected Human(string surname, string name, string patronymic, DateTime birth)
+    public Human(string surname, string name, string patronymic, DateTime birth)
     {
     	Surname = surname;
     	Name = name;

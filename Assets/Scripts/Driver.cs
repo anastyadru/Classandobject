@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 internal sealed class Driver : MonoBehaviour, IEmployee
 {
-    private string Brand { get; set; }
+    public string Brand { get; set; }
         
-    private string Model { get; set; }
+    public string Model { get; set; }
 
     public Driver(string surname, string name, string patronymic, DateTime  birth, string company, int salary, int experience, string brand, string model): base(surname, name, patronymic, birth, company, salary, experience)
     {

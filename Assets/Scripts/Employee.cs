@@ -19,11 +19,11 @@ public interface IEmployee
 
 public class Employee : MonoBehaviour, IEmployee, IHuman
 {
-    private string Company { get; set; }
+    public string Company { get; set; }
     
-    private int Salary { get; set; }
+    public int Salary { get; set; }
 
-    private int Experience { get; set; }
+    public int Experience { get; set; }
 
         
     public Employee(string surname, string name, string patronymic, DateTime  birth, string company, int salary, int experience): base(surname, name, patronymic, birth)
