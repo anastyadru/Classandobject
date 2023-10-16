@@ -60,19 +60,20 @@ public class Student : Human
         Console.WriteLine($"Группа: {Group}");
     }
 
-    if OnAddButtonClicked()
+    public void OnAddButtonClicked()
     {
-        Debug.Log("Данные студента добавлены:\n" + student.Print());
+        Debug.Log("Данные студента добавлены:\n" + Print());
     }
 
-	else if OnEditButtonClicked()
+    public void OnEditButtonClicked()
     {
-
+        Edit();
+        Debug.Log("Данные студента изменены:\n" + Print());
 	}
 
-    else if OnDeleteButtonClicked() 
+    public void OnDeleteButtonClicked() 
     {
-
+        Debug.Log("Данные студента удалены");
 	}
 
 }    

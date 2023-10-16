@@ -60,5 +60,21 @@ public class Employee : Human
         Console.WriteLine($"Зарплата: {Salary}");
         Console.WriteLine($"Опыт работы: {Experience}");
     }
+    
+    public void OnAddButtonClicked()
+    {
+        Debug.Log("Данные работника добавлены:\n" + Print());
+    }
+
+    public void OnEditButtonClicked()
+    {
+        Edit();
+        Debug.Log("Данные работника изменены:\n" + Print());
+    }
+
+    public void OnDeleteButtonClicked() 
+    {
+        Debug.Log("Данные работника удалены");
+    }
         
 }

@@ -50,5 +50,21 @@ public sealed class Driver : Employee
         Console.WriteLine($"Бренд: {Brand}");
         Console.WriteLine($"Модель: {Model}");
     }
+    
+    public void OnAddButtonClicked()
+    {
+        Debug.Log("Данные водителя добавлены:\n" + Print());
+    }
+
+    public void OnEditButtonClicked()
+    {
+        Edit();
+        Debug.Log("Данные водителя изменены:\n" + Print());
+    }
+
+    public void OnDeleteButtonClicked() 
+    {
+        Debug.Log("Данные водителя удалены");
+    }
         
 }
