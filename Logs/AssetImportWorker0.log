@@ -168,3 +168,29 @@ Received Import Request.
   path: Assets/Scripts/Student.cs
   artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa3d92c66f62963541370d549889daf') in 0.017121 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009447 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.649 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2669 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3139.
+Total: 4.101700 ms (FindLiveObjects: 0.425000 ms CreateObjectMapping: 0.287600 ms MarkObjects: 3.286500 ms  DeleteObjects: 0.100000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 719.422588 seconds.
+  path: Assets/Scripts/Employee.cs
+  artifactKey: Guid(d59d91abc3ed78443986caeec3eaeed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Employee.cs using Guid(d59d91abc3ed78443986caeec3eaeed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf0ed19b1aa80f087fe4af0845d70b2') in 0.028078 seconds 
