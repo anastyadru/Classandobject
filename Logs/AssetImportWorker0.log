@@ -374,3 +374,122 @@ System memory in use after: 99.0 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3164.
 Total: 4.268500 ms (FindLiveObjects: 0.584700 ms CreateObjectMapping: 0.361700 ms MarkObjects: 3.235000 ms  DeleteObjects: 0.083900 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006425 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.858 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3167.
+Total: 3.645500 ms (FindLiveObjects: 0.514100 ms CreateObjectMapping: 0.297700 ms MarkObjects: 2.748600 ms  DeleteObjects: 0.082100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118979.571232 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f50d651dd61336d665501a75d05815') in 0.024890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 240.737401 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b581c867938eef09ec5df092102a1e') in 0.016332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.083044 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0490546766899874c9c607a3abee1993') in 0.006343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.237543 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d23b4f07cbf9d32995e45b31dd0cd7b') in 0.017696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 151.465271 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3611005b8cece39f5e4cebdccca91466') in 0.012735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.116825 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d6dcfdf4b394c0cd13c5640446ca18') in 0.025462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.182159 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2449adb6539e065a245a76c5dfc4a5cc') in 0.015931 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016814 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.360 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3170.
+Total: 20.201600 ms (FindLiveObjects: 2.215800 ms CreateObjectMapping: 2.676600 ms MarkObjects: 14.938000 ms  DeleteObjects: 0.367200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.734389 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec9bc3722b90df8deb8de5aca71ab8e') in 15.730741 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.048465 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 24.769 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3173.
+Total: 282.298100 ms (FindLiveObjects: 0.534700 ms CreateObjectMapping: 16.626600 ms MarkObjects: 265.004500 ms  DeleteObjects: 0.129200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.113007 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 98.294 seconds
+Platform modules already initialized, skipping
