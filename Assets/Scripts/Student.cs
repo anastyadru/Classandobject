@@ -353,11 +353,11 @@ public class MenuController : MonoBehaviour
         if (studentToDelete != null)
         {
             people.Remove(studentToDelete);
-            Debug.Log("Данные студента удалены.");
+            Debug.Log("Данные студента удалены");
         }
         else
         {
-            Debug.Log("Студент с такой фамилией не найден.");
+            Debug.Log("Студент с такой фамилией не найден");
         }
     }
 }

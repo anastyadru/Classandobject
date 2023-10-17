@@ -493,3 +493,97 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in 98.294 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3176.
+Total: 15.914200 ms (FindLiveObjects: 2.649500 ms CreateObjectMapping: 0.684600 ms MarkObjects: 12.241200 ms  DeleteObjects: 0.334900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 420.359458 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.013067 seconds  code(4) message(Build asset version error: assets/scripts/student.cs in SourceAssetDB has modification time of '2023-10-17T19:38:21.8118835Z' while content on disk has modification time of '2023-10-17T19:40:21.7429941Z')
+  ERROR: Build asset version error: assets/scripts/student.cs in SourceAssetDB has modification time of '2023-10-17T19:38:21.8118835Z' while content on disk has modification time of '2023-10-17T19:40:21.7429941Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.095598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 5.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 16.485 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2667 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3179.
+Total: 12.736800 ms (FindLiveObjects: 0.587800 ms CreateObjectMapping: 0.331100 ms MarkObjects: 11.713900 ms  DeleteObjects: 0.100300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 636.263812 seconds.
+  path: Assets/Scripts/Student.cs
+  artifactKey: Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Student.cs using Guid(6d5c8f1e4aa2098489b8cfa01f3fcc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50027baa6f2736d334ddce52cc130ef6') in 0.123559 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.039691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.655 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3183.
+Total: 3.309400 ms (FindLiveObjects: 0.305900 ms CreateObjectMapping: 0.217900 ms MarkObjects: 2.683500 ms  DeleteObjects: 0.099600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 223.476261 seconds.
+  path: Assets/Scripts/AddStudentPanelController.cs
+  artifactKey: Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AddStudentPanelController.cs using Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a564728735f89f2bfbcc537ebcdbc3') in 0.040487 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.040401 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 6.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.856 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3186.
+Total: 3.789400 ms (FindLiveObjects: 0.306100 ms CreateObjectMapping: 0.213700 ms MarkObjects: 3.188100 ms  DeleteObjects: 0.078200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.299892 seconds.
+  path: Assets/Scripts/AddStudentPanelController.cs
+  artifactKey: Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AddStudentPanelController.cs using Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050139e6a46fa42e35dc5d68384c0d9f') in 0.010528 seconds 
