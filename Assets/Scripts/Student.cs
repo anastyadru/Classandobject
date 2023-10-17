@@ -294,3 +294,70 @@ public class Program
         }
     }
 }
+
+public class MenuController : MonoBehaviour
+{
+    public GameObject addStudentPanel;
+    public GameObject editStudentPanel;
+    public GameObject deleteStudentPanel;
+
+    private List<Human> people = new List<Human>();
+
+    public void AddButtonClicked()
+    {
+        addStudentPanel.SetActive(true);
+        editStudentPanel.SetActive(false);
+        deleteStudentPanel.SetActive(false);
+    }
+
+    public void EditButtonClicked()
+    {
+        addStudentPanel.SetActive(false);
+        editStudentPanel.SetActive(true);
+        deleteStudentPanel.SetActive(false);
+    }
+
+    public void DeleteButtonClicked()
+    {
+        addStudentPanel.SetActive(false);
+        editStudentPanel.SetActive(false);
+        deleteStudentPanel.SetActive(true);
+    }
+
+    public void AddStudent(string surname, string name, string patronymic, DateTime birth, string faculty, int course, int group)
+    {
+        var student = new Student(surname, name, patronymic, birth, faculty, course, group);
+        people.Add(student);
+        Debug.Log("Студент добавлен:\n" + student.Print());
+    }
+
+    public void EditStudent(string surname)
+    {
+        var studentToEdit = people.Find(p => p.Surname == surname);
+
+        if (studentToEdit != null)
+        {
+            studentToEdit.Edit();
+            Debug.Log("Данные студента изменены:\n" + studentToEdit.Print());
+        }
+        else
+        {
+            Debug.Log("Студент с такой фамилией не найден");
+        }
+    }
+
+    public void DeleteStudent(string surname)
+    {
+        var studentToDelete = people.Find(p => p.Surname == surname);
+
+        if (studentToDelete != null)
+        {
+            people.Remove(studentToDelete);
+            Debug.Log("Данные студента удалены.");
+        }
+        else
+        {
+            Debug.Log("Студент с такой фамилией не найден.");
+        }
+    }
+}
