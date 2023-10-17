@@ -320,6 +320,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Add.cs"
+"Assets/Scripts/AddStudentPanelController.cs"
 "Assets/Scripts/Delete.cs"
 "Assets/Scripts/Driver.cs"
 "Assets/Scripts/Edit.cs"
