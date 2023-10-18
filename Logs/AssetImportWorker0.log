@@ -587,3 +587,69 @@ Received Import Request.
   path: Assets/Scripts/AddStudentPanelController.cs
   artifactKey: Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/AddStudentPanelController.cs using Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050139e6a46fa42e35dc5d68384c0d9f') in 0.010528 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.043799 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.515 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3189.
+Total: 4.520000 ms (FindLiveObjects: 0.322400 ms CreateObjectMapping: 0.256400 ms MarkObjects: 2.947500 ms  DeleteObjects: 0.990200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009219 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.623 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 142.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3192.
+Total: 6.098000 ms (FindLiveObjects: 0.818900 ms CreateObjectMapping: 0.358700 ms MarkObjects: 4.808800 ms  DeleteObjects: 0.108500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 60460.457432 seconds.
+  path: Assets/Scripts/AddStudentPanelController.cs
+  artifactKey: Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AddStudentPanelController.cs using Guid(819fc69ef05191f40b3d2c80b11f6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596a92f613e3b896d0be9e220e2b3f56') in 0.014935 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005462 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.570 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3195.
+Total: 4.053000 ms (FindLiveObjects: 0.398900 ms CreateObjectMapping: 0.359200 ms MarkObjects: 3.150000 ms  DeleteObjects: 0.141200 ms)
+

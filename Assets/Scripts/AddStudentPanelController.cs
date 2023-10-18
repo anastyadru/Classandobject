@@ -24,9 +24,9 @@ public class AddStudentPanelController : MonoBehaviour
         var patronymic = patronymicInput.text;
         var birth = DateTime.ParseExact(birthInput.text, "dd.MM.yyyy", null);
         var faculty = facultyInput.text;
-        var coursee = courseInput.text;
-        var group = groupInput.text;
+        int course = int.Parse(courseInput.text);
+        int group = int.Parse(groupInput.text);
 
-        menuController.AddStudent(surname, name, patronymic, birth, faculty, courseInput.text, group);
+        menuController.AddStudent(surname, name, patronymic, birth, faculty, course, group);
     }
 }
