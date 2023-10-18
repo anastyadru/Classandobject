@@ -19,14 +19,31 @@ public class AddStudentPanelController : MonoBehaviour
 
     public void AddStudentButtonClicked()
     {
-        var surname = surnameInput.text;
-        var name = nameInput.text;
-        var patronymic = patronymicInput.text;
-        var birth = DateTime.ParseExact(birthInput.text, "dd.MM.yyyy", null);
-        var faculty = facultyInput.text;
-        int course = int.Parse(courseInput.text);
-        int group = int.Parse(groupInput.text);
+        if (surnameInput != null && nameInput != null && patronymicInput != null && birthInput != null &&
+            facultyInput != null && courseInput != null && groupInput != null)
+        {
+            var surname = surnameInput.text;
+            var name = nameInput.text;
+            var patronymic = patronymicInput.text;
+            var birth = DateTime.ParseExact(birthInput.text, "dd.MM.yyyy", null);
+            var faculty = facultyInput.text;
+            int course = int.Parse(courseInput.text);
+            int group = int.Parse(groupInput.text);
 
-        menuController.AddStudent(surname, name, patronymic, birth, faculty, course, group);
+            if (menuController != null) 
+            {
+                menuController.AddStudent(surname, name, patronymic, birth, faculty, course, group);
+            }
+            
+            else 
+            {
+                Debug.LogError("menuController is null");
+            }
+        }
+        
+        else
+        {
+            Debug.LogError("One or more input fields are null");
+        }
     }
 }
