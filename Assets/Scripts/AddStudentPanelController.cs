@@ -13,7 +13,7 @@ public class AddStudentPanelController : MonoBehaviour
     public InputField patronymicInput;
     public InputField birthInput;
     public InputField facultyInput;
-    public InputField courseeInput;
+    public InputField courseInput;
     public InputField groupInput;
     public MenuController menuController;
 
@@ -22,11 +22,11 @@ public class AddStudentPanelController : MonoBehaviour
         var surname = surnameInput.text;
         var name = nameInput.text;
         var patronymic = patronymicInput.text;
-        var birth = int.Parse(ageInput.text);
+        var birth = DateTime.ParseExact(birthInput.text, "dd.MM.yyyy", null);
         var faculty = facultyInput.text;
-        var coursee = courseeInput.text;
+        var coursee = courseInput.text;
         var group = groupInput.text;
 
-        menuController.AddStudent(surname, name, patronymic, birth, faculty, coursee, group);
+        menuController.AddStudent(surname, name, patronymic, birth, faculty, courseInput.text, group);
     }
 }
