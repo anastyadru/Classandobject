@@ -386,9 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e66db67855083f4e9695e602173a2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addPersonPanel: {fileID: 0}
-  editPersonPanel: {fileID: 0}
-  deletePersonPanel: {fileID: 0}
+  addPersonPanel: {fileID: 715132775}
+  editPersonPanel: {fileID: 1644582614}
+  deletePersonPanel: {fileID: 1152453946}
 --- !u!1 &299813361
 GameObject:
   m_ObjectHideFlags: 0
