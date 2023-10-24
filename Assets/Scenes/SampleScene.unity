@@ -386,9 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e66db67855083f4e9695e602173a2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addStudentPanel: {fileID: 0}
-  editStudentPanel: {fileID: 0}
-  deleteStudentPanel: {fileID: 0}
+  addPersonPanel: {fileID: 0}
+  editPersonPanel: {fileID: 0}
+  deletePersonPanel: {fileID: 0}
 --- !u!1 &299813361
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +958,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 296882336}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: AddButtonClicked
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1755,6 +1767,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 296882336}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: DeleteButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1152453949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,6 +2145,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 296882336}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: EditButtonClicked
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
