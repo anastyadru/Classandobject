@@ -47,67 +47,73 @@ public class MenuController : MonoBehaviour
         Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ: ");
         var birth = Convert.ToDateTime(Console.ReadLine());
 
-        if (Input.GetKey(KeyCode.StudentButton))
+        Console.Write("Выберите, кого хотите добавить:\n1) student \n2) employee \n3) driver \nВаше решение: ");
+        var person = int.Parse(Console.ReadLine());
+
+        switch (person)
         {
+            case 1:
 
-            Console.Write("Введите факультет: ");
-            var faculty = Console.ReadLine();
+                Console.Write("Введите факультет: ");
+                var faculty = Console.ReadLine();
 
-            Console.Write("Введите курс: ");
-            var course = int.Parse(Console.ReadLine());
+                Console.Write("Введите курс: ");
+                var course = int.Parse(Console.ReadLine());
 
-            Console.Write("Введите группу: ");
-            var group = int.Parse(Console.ReadLine());
+                Console.Write("Введите группу: ");
+                var group = int.Parse(Console.ReadLine());
 
-            Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
-            people.Add(student);
+                Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
+                people.Add(student);
 
-            Console.WriteLine("Данные студента добавлены:\n" + student.Print());
-        }
+                Console.WriteLine("Данные студента добавлены:\n" + student.Print());
 
-        else if (Input.GetKey(KeyCode.EmployeeButton))
-        {
+                break;
 
-            Console.Write("Введите название компании: ");
-            var company = Console.ReadLine();
+            case 2:
 
-            Console.Write("Введите заработную плату: ");
-            var salary = int.Parse(Console.ReadLine());
+                Console.Write("Введите название компании: ");
+                var company = Console.ReadLine();
 
-            Console.Write("Введите опыт работы: ");
-            var experience = int.Parse(Console.ReadLine());
+                Console.Write("Введите заработную плату: ");
+                var salary = int.Parse(Console.ReadLine());
 
-            Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
-            people.Add(employee);
+                Console.Write("Введите опыт работы: ");
+                var experience = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Данные работника добавлены:\n" + employee.Print());
-        }
+                Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
+                people.Add(employee);
 
-        else if (Input.GetKey(KeyCode.DriverButton))
-        {
+                Console.WriteLine("Данные работника добавлены:\n" + employee.Print());
 
-            Console.Write("Введите название компании: ");
-            var company3 = Console.ReadLine();
+                break;
 
-            Console.Write("Введите заработную плату: ");
-            var salary3 = int.Parse(Console.ReadLine());
+            case 3:
 
-            Console.Write("Введите опыт работы: ");
-            var experience3 = int.Parse(Console.ReadLine());
+                Console.Write("Введите название компании: ");
+                var company3 = Console.ReadLine();
 
-            Console.Write("Введите бренд: ");
-            var brand = Console.ReadLine();
+                Console.Write("Введите заработную плату: ");
+                var salary3 = int.Parse(Console.ReadLine());
 
-            Console.Write("Введите модель: ");
-            var model = Console.ReadLine();
+                Console.Write("Введите опыт работы: ");
+                var experience3 = int.Parse(Console.ReadLine());
 
-            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
-            people.Add(driver);
+                Console.Write("Введите бренд: ");
+                var brand = Console.ReadLine();
 
-            Console.WriteLine("Данные водителя добавлены:\n" + driver.Print());
+                Console.Write("Введите модель: ");
+                var model = Console.ReadLine();
+
+                Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
+                people.Add(driver);
+
+                Console.WriteLine("Данные водителя добавлены:\n" + driver.Print());
+
+                break;
         }
     }
-
+        
     static void EditPerson(List<Human> people)
     {
         Console.WriteLine("Введите фамилию человека, данные которого хотите изменить: ");
