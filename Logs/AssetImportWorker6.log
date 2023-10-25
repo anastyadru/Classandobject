@@ -422,3 +422,9 @@ System memory in use after: 98.9 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3175.
 Total: 4.970300 ms (FindLiveObjects: 1.205700 ms CreateObjectMapping: 0.339700 ms MarkObjects: 3.248400 ms  DeleteObjects: 0.173600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 27355.559407 seconds.
+  path: Assets/Scripts/MenuController.cs
+  artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102f70857cf2f2d2f5ba5c98f785409a') in 0.089169 seconds 
