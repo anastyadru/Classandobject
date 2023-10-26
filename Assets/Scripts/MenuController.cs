@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     public Text nameInput;
     public Text patronymicInput;
     public Text birthInput;
-    public Text personDropdown;
+    public Dropdown personDropdown;
 
     public Text facultyInput;
     public Text courseInput;
@@ -51,7 +51,7 @@ public class MenuController : MonoBehaviour
         deletePersonPanel.SetActive(true);
     }
 
-    public AddPerson()
+    public void AddPerson()
     {
         string surname = surnameInput.text;
         string name = nameInput.text;
@@ -87,25 +87,24 @@ public class MenuController : MonoBehaviour
         
         else if (personType == 2)
         {
-            string company = companyInput.text;
-            int salary = int.Parse(salaryInput.text);
-            int experience = int.Parse(experienceInput.text);
+            string company3 = companyInput.text;
+            int salary3 = int.Parse(salaryInput.text);
+            int experience3 = int.Parse(experienceInput.text);
             string brand = brandInput.text;
             string model = modelInput.text;
 
-            Driver driver = new Driver(surname, name, patronymic, birth, company, salary, experience, brand, model);
+            Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
             people.Add(driver);
 
             Debug.Log("Данные водителя добавлены:\n" + driver.Print());
         }
     }
         
-    static void EditPerson(List<Human> people)
+    public void EditPerson()
     {
-        Console.WriteLine("Введите фамилию человека, данные которого хотите изменить: ");
-        var surnameToEdit = Console.ReadLine();
+        string surname = surnameInput.text;
                     
-        var personToEdit = people.Find(p => p.Surname == surnameToEdit);
+        var personToEdit = people.Find(p => p.Surname == surname);
 
         if (personToEdit != null)
         {
@@ -119,12 +118,11 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    static void DeletePerson(List<Human> people)
+    public void DeletePerson()
     {
-        Console.WriteLine("Введите фамилию человека, данные которого хотите удалить: ");
-        var surnameToDelete = Console.ReadLine();
+        string surname = surnameInput.text;
                     
-        var personToDelete = people.Find(p => p.Surname == surnameToDelete);
+        var personToDelete = people.Find(p => p.Surname == surname);
 
         if (personToDelete != null)
         {
