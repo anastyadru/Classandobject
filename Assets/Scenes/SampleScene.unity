@@ -346,6 +346,19 @@ MonoBehaviour:
   addPersonPanel: {fileID: 715132775}
   editPersonPanel: {fileID: 1644582614}
   deletePersonPanel: {fileID: 1152453946}
+  surnameInput: {fileID: 0}
+  nameInput: {fileID: 0}
+  patronymicInput: {fileID: 0}
+  birthInput: {fileID: 0}
+  personDropdown: {fileID: 0}
+  facultyInput: {fileID: 0}
+  courseInput: {fileID: 0}
+  groupInput: {fileID: 0}
+  companyInput: {fileID: 0}
+  salaryInput: {fileID: 0}
+  experienceInput: {fileID: 0}
+  brandInput: {fileID: 0}
+  modelInput: {fileID: 0}
 --- !u!1 &299813361
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +938,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: AddButtonClicked
+        m_MethodName: AddPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1193,7 +1206,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: AddButtonClicked
+        m_MethodName: AddPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1205,7 +1218,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: EditButtonClicked
+        m_MethodName: EditPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1217,7 +1230,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: DeleteButtonClicked
+        m_MethodName: DeletePerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1748,7 +1761,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: DeleteButtonClicked
+        m_MethodName: DeletePerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1894,7 +1907,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: AddButtonClicked
+        m_MethodName: AddPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1906,7 +1919,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: EditButtonClicked
+        m_MethodName: EditPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1918,7 +1931,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: DeleteButtonClicked
+        m_MethodName: DeletePerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2119,7 +2132,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: EditButtonClicked
+        m_MethodName: EditPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2265,7 +2278,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: AddButtonClicked
+        m_MethodName: AddPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2277,7 +2290,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: EditButtonClicked
+        m_MethodName: EditPerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2289,7 +2302,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 296882336}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: DeleteButtonClicked
+        m_MethodName: DeletePerson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
