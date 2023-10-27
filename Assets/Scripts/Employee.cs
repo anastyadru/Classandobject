@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Employee : Human
 {
-    public string Company { get; set; }
+    private string Company { get; set; }
     
-    public int Salary { get; set; }
+    private int Salary { get; set; }
 
-    public int Experience { get; set; }
+    private int Experience { get; set; }
 
         
     public Employee(string surname, string name, string patronymic, DateTime  birth, string company, int salary, int experience): base(surname, name, patronymic, birth)

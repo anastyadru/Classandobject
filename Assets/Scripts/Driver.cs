@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public sealed class Driver : Employee
 {
-    public string Brand { get; set; }
+    private string Brand { get; set; }
         
-    public string Model { get; set; }
+    private string Model { get; set; }
 
     public Driver(string surname, string name, string patronymic, DateTime  birth, string company, int salary, int experience, string brand, string model): base(surname, name, patronymic, birth, company, salary, experience)
     {
