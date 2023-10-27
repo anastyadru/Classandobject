@@ -856,3 +856,29 @@ System memory in use after: 99.0 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3232.
 Total: 16.696100 ms (FindLiveObjects: 0.375000 ms CreateObjectMapping: 0.632900 ms MarkObjects: 9.420200 ms  DeleteObjects: 6.264600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 195.946483 seconds.
+  path: Assets/Scripts/MenuController.cs
+  artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a430d04531e761fc19e6c01425006a') in 0.055524 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007499 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 229.160 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 10.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2669 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3235.
+Total: 29.712200 ms (FindLiveObjects: 1.986400 ms CreateObjectMapping: 2.432300 ms MarkObjects: 24.618000 ms  DeleteObjects: 0.669900 ms)
+
