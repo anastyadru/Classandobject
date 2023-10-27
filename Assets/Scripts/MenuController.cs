@@ -51,7 +51,7 @@ public class MenuController : MonoBehaviour
         deletePersonPanel.SetActive(true);
     }
 
-    public void AddPerson()
+    public void AddHuman()
     {
         string surname = surnameInput.text;
         string name = nameInput.text;
@@ -59,8 +59,8 @@ public class MenuController : MonoBehaviour
         string birthString = birthInput.text;
         var birth = System.DateTime.Parse(birthString);
         
-        Person person = new Person(surname, name, patronymic, birth);
-        people.Add(person);
+        // Person person = new Person(surname, name, patronymic, birth);
+        // people.Add(person);
 
         int personType = personDropdown.value;
 
@@ -103,7 +103,7 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    public void EditPerson()
+    public void EditHuman()
     {
         string surname = surnameInput.text;
                     
@@ -121,7 +121,7 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    public void DeletePerson()
+    public void DeleteHuman()
     {
         string surname = surnameInput.text;
                     
