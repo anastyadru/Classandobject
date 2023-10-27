@@ -58,6 +58,9 @@ public class MenuController : MonoBehaviour
         string patronymic = patronymicInput.text;
         string birthString = birthInput.text;
         var birth = System.DateTime.Parse(birthString);
+        
+        Person person = new Person(surname, name, patronymic, birth);
+        people.Add(person);
 
         int personType = personDropdown.value;
 
