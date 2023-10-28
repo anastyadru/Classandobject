@@ -70,16 +70,15 @@ public class MenuController : MonoBehaviour
             int course = int.Parse(courseInput.text);
             int group = int.Parse(groupInput.text);
             
-            if (studentsList == null)
-            {
-                Debug.LogError("studentsList не был инициализирован!");
-                return;
-            }
-            
             if (string.IsNullOrEmpty(faculty) || string.IsNullOrEmpty(courseInput.text) || string.IsNullOrEmpty(groupInput.text))
             {
                 Debug.LogError("Не все поля студента заполнены!");
                 return;
+            }
+
+            if (studentsList == null)
+            {
+                studentsList = new List<Student>();
             }
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
@@ -101,6 +100,11 @@ public class MenuController : MonoBehaviour
                 return;
             }
             
+            if (employeesList == null)
+            {
+                employeesList = new List<Employee>();
+            }
+            
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
             
@@ -119,6 +123,11 @@ public class MenuController : MonoBehaviour
             {
                 Debug.LogError("Не все поля водителя заполнены!");
                 return;
+            }
+            
+            if (driversList == null)
+            {
+                driversList = new List<Driver>();
             }
 
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
