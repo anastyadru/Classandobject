@@ -69,17 +69,6 @@ public class MenuController : MonoBehaviour
             string faculty = facultyInput.text;
             int course = int.Parse(courseInput.text);
             int group = int.Parse(groupInput.text);
-            
-            if (string.IsNullOrEmpty(faculty) || string.IsNullOrEmpty(courseInput.text) || string.IsNullOrEmpty(groupInput.text))
-            {
-                Debug.LogError("Не все поля студента заполнены!");
-                return;
-            }
-
-            if (studentsList == null)
-            {
-                studentsList = new List<Student>();
-            }
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
             people.Add(student);
@@ -92,18 +81,6 @@ public class MenuController : MonoBehaviour
             string company = companyInput.text;
             int salary = int.Parse(salaryInput.text);
             int experience = int.Parse(experienceInput.text);
-            
-            
-            if (string.IsNullOrEmpty(company) || string.IsNullOrEmpty(salaryInput.text) || string.IsNullOrEmpty(experienceInput.text))
-            {
-                Debug.LogError("Не все поля работника заполнены!");
-                return;
-            }
-            
-            if (employeesList == null)
-            {
-                employeesList = new List<Employee>();
-            }
             
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
@@ -119,17 +96,6 @@ public class MenuController : MonoBehaviour
             string brand = brandInput.text;
             string model = modelInput.text;
             
-            if (string.IsNullOrEmpty(company3) || string.IsNullOrEmpty(salaryInput.text) || string.IsNullOrEmpty(experienceInput.text) || string.IsNullOrEmpty(brand) || string.IsNullOrEmpty(model))
-            {
-                Debug.LogError("Не все поля водителя заполнены!");
-                return;
-            }
-            
-            if (driversList == null)
-            {
-                driversList = new List<Driver>();
-            }
-
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
             people.Add(driver);
 
