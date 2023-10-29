@@ -36,27 +36,39 @@ public class MenuController : MonoBehaviour
 
     public void AddHuman()
     {
-        string surname = surnameInput.text;
-        string name = nameInput.text;
-        string patronymic = patronymicInput.text;
-        string birthString = birthInput.text;
-        var birth = System.DateTime.Parse(birthString);
+        Console.WriteLine("Введите фамилию: ");
+        var surname = Console.ReadLine();
+
+        Console.WriteLine("Введите имя: ");
+        var name = Console.ReadLine();
+
+        Console.WriteLine("Введите отчество: ");
+        var patronymic = Console.ReadLine();
+
+        Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ: ");
+        var birth = Convert.ToDateTime(Console.ReadLine());
         
         Human human = new Human(surname, name, patronymic, birth);
         people.Add(human);
 
-        int personType = personDropdown.value;
+        Console.WriteLine("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
+        int personType = int.Parse(Console.ReadLine());
 
         if (personType == 0)
         {
-            string faculty = facultyInput.text;
-            int course = int.Parse(courseInput.text);
-            int group = int.Parse(groupInput.text);
+            Console.WriteLine("Введите факультет: ");
+            var faculty = Console.ReadLine();
+
+            Console.WriteLine("Введите курс: ");
+            var course = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите группу: ");
+            var group = int.Parse(Console.ReadLine());
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
             people.Add(student);
 
-            Debug.Log("Данные студента добавлены:\n" + student.Print());
+            Console.WriteLine("Данные студента добавлены:\n" + student.Print());
         }
         
         else if (personType == 1)
