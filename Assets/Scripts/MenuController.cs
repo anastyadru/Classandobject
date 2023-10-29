@@ -36,16 +36,16 @@ public class MenuController : MonoBehaviour
 
     public void AddHuman()
     {
-        Console.WriteLine("Введите фамилию: ");
+        Console.WriteLine("Введите фамилию:");
         var surname = Console.ReadLine();
 
-        Console.WriteLine("Введите имя: ");
+        Console.WriteLine("Введите имя:");
         var name = Console.ReadLine();
 
-        Console.WriteLine("Введите отчество: ");
+        Console.WriteLine("Введите отчество:");
         var patronymic = Console.ReadLine();
 
-        Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ: ");
+        Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ:");
         var birth = Convert.ToDateTime(Console.ReadLine());
         
         Human human = new Human(surname, name, patronymic, birth);
@@ -56,13 +56,13 @@ public class MenuController : MonoBehaviour
 
         if (personType == 0)
         {
-            Console.WriteLine("Введите факультет: ");
+            Console.WriteLine("Введите факультет:");
             var faculty = Console.ReadLine();
 
-            Console.WriteLine("Введите курс: ");
+            Console.WriteLine("Введите курс:");
             var course = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите группу: ");
+            Console.WriteLine("Введите группу:");
             var group = int.Parse(Console.ReadLine());
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
