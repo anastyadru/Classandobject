@@ -11,23 +11,6 @@ public class MenuController : MonoBehaviour
     public GameObject editPersonPanel;
     public GameObject deletePersonPanel;
     
-    public Text surnameInput;
-    public Text nameInput;
-    public Text patronymicInput;
-    public Text birthInput;
-    public Dropdown personDropdown;
-
-    public Text facultyInput;
-    public Text courseInput;
-    public Text groupInput;
-
-    public Text companyInput;
-    public Text salaryInput;
-    public Text experienceInput;
-
-    public Text brandInput;
-    public Text modelInput;
-
     private List<Human> people = new List<Human>();
 
     public void AddButtonClicked()
