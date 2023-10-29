@@ -998,3 +998,21 @@ Received Import Request.
   path: Assets/Scripts/MenuController.cs
   artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d52c53c281944289bace66d6b30b358') in 0.018928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23306.961421 seconds.
+  path: Assets/Scripts/MenuController.cs
+  artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2569c1a6d23ee41c1d92e5520cc24270') in 0.111308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.678201 seconds.
+  path: Assets/Scripts/MenuController.cs
+  artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa48dbb145a741850f3e138ae441532') in 0.041281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 128.135327 seconds.
+  path: Assets/Scripts/MenuController.cs
+  artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df3f682da6a393d52d3d9542c48790b') in 0.210723 seconds 
