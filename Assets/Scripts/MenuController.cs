@@ -73,28 +73,42 @@ public class MenuController : MonoBehaviour
         
         else if (personType == 1)
         {
-            string company = companyInput.text;
-            int salary = int.Parse(salaryInput.text);
-            int experience = int.Parse(experienceInput.text);
+            Console.WriteLine("Введите название компании:");
+            var company = Console.ReadLine();
+        
+            Console.WriteLine("Введите зарплату:");
+            var salary = int.Parse(Console.ReadLine());
+        
+            Console.WriteLine("Введите стаж работы:");
+            var experience = int.Parse(Console.ReadLine());
             
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
             
-            Debug.Log("Данные работника добавлены:\n" + employee.Print());
+            Console.WriteLine("Данные работника добавлены:\n" + employee.Print());
         }
         
         else if (personType == 2)
         {
-            string company3 = companyInput.text;
-            int salary3 = int.Parse(salaryInput.text);
-            int experience3 = int.Parse(experienceInput.text);
-            string brand = brandInput.text;
-            string model = modelInput.text;
+            Console.WriteLine("Введите название компании:");
+            var company3 = Console.ReadLine();
+        
+            Console.WriteLine("Введите заработную плату:");
+            var salary3 = int.Parse(Console.ReadLine());
+        
+            Console.WriteLine("Введите опыт работы:");
+            var experience3 = int.Parse(Console.ReadLine());
+        
+            Console.WriteLine("Введите бренд:");
+            var brand = Console.ReadLine();
+        
+            Console.WriteLine("Введите модель:");
+            var model = Console.ReadLine();
             
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
             people.Add(driver);
 
-            Debug.Log("Данные водителя добавлены:\n" + driver.Print());
+            Console.WriteLine("Данные водителя добавлены:\n" + driver.Print());
         }
     }
         
