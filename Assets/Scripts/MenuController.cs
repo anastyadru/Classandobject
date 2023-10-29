@@ -114,37 +114,39 @@ public class MenuController : MonoBehaviour
         
     public void EditHuman()
     {
-        string surname = surnameInput.text;
+        Console.WriteLine("Введите фамилию человека, данные которого хотите изменить:");
+        var surnameToEdit = Console.ReadLine();
                     
-        var personToEdit = people.Find(p => p.Surname == surname);
+        var personToEdit = people.Find(p => p.Surname == surnameToEdit);
 
         if (personToEdit != null)
         {
             personToEdit.Edit();
-            Debug.Log("Изменения сохранены");
+            Console.WriteLine("Изменения сохранены");
         }
                     
         else
         {
-            Debug.Log("Человек с такой фамилией не найден");
+            Console.WriteLine("Человек с такой фамилией не найден");
         }
     }
         
     public void DeleteHuman()
     {
-        string surname = surnameInput.text;
+        Console.WriteLine("Введите фамилию человека, данные которого хотите удалить:");
+        var surnameToDelete = Console.ReadLine();
                     
-        var personToDelete = people.Find(p => p.Surname == surname);
+        var personToDelete = people.Find(p => p.Surname == surnameToDelete);
 
         if (personToDelete != null)
         {
             people.Remove(personToDelete);
-            Debug.Log("Информация о человеке удалена");
+            Console.WriteLine("Информация о человеке удалена");
         }
         
         else
         {
-            Debug.Log("Человек с такой фамилией не найден");
+            Console.WriteLine("Человек с такой фамилией не найден");
         }
     }
 
