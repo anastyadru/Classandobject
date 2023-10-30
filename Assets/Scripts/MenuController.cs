@@ -34,7 +34,7 @@ public class MenuController : MonoBehaviour
         deletePersonPanel.SetActive(true);
     }
 
-    public void AddHuman()
+    static void AddPerson(List<Human> people)
     {
         Console.WriteLine("Введите фамилию:");
         var surname = Console.ReadLine();
@@ -76,7 +76,7 @@ public class MenuController : MonoBehaviour
             Console.WriteLine("Введите название компании:");
             var company = Console.ReadLine();
         
-            Console.WriteLine("Введите зарплату:");
+            Console.WriteLine("Введите заработную плату:");
             var salary = int.Parse(Console.ReadLine());
         
             Console.WriteLine("Введите стаж работы:");
@@ -112,7 +112,8 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    public void EditHuman()
+   
+	static void EditPerson(List<Human> people)
     {
         Console.WriteLine("Введите фамилию человека, данные которого хотите изменить:");
         var surnameToEdit = Console.ReadLine();
@@ -131,7 +132,7 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    public void DeleteHuman()
+    static void DeletePerson(List<Human> people)
     {
         Console.WriteLine("Введите фамилию человека, данные которого хотите удалить:");
         var surnameToDelete = Console.ReadLine();
