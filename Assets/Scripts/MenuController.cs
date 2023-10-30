@@ -49,7 +49,11 @@ public class MenuController : MonoBehaviour
         var patronymic = Console.ReadLine();
 
         Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ:");
-        var birth = Convert.ToDateTime(Console.ReadLine());
+        DateTime birth;
+        while (!DateTime.TryParse(Console.ReadLine(), out birth))
+        {
+            Console.WriteLine("Некорректный формат даты. Попробуйте еще раз.");
+        }
         
         Human human = new Human(surname, name, patronymic, birth);
         people.Add(human);
@@ -63,10 +67,18 @@ public class MenuController : MonoBehaviour
             var faculty = Console.ReadLine();
 
             Console.WriteLine("Введите курс:");
-            var course = int.Parse(Console.ReadLine());
+            int course;
+            while (!int.TryParse(Console.ReadLine(), out course) || course < 1)
+            {
+            	Console.WriteLine("Некорректный курс. Попробуйте еще раз.");
+            }
 
             Console.WriteLine("Введите группу:");
-            var group = int.Parse(Console.ReadLine());
+            int group;
+            while (!int.TryParse(Console.ReadLine(), out group) || group < 1)
+            {
+            	Console.WriteLine("Некорректная группа. Попробуйте еще раз.");
+            }
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
             people.Add(student);
@@ -80,10 +92,18 @@ public class MenuController : MonoBehaviour
             var company = Console.ReadLine();
         
             Console.WriteLine("Введите заработную плату:");
-            var salary = int.Parse(Console.ReadLine());
+            int salary;
+            while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
+            {
+				Console.WriteLine("Некорректная заработная плата. Попробуйте еще раз.");
+            }
         
             Console.WriteLine("Введите стаж работы:");
-            var experience = int.Parse(Console.ReadLine());
+            int experience;
+            while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
+            {
+            	Console.WriteLine("Некорректный стаж работы. Попробуйте еще раз.");
+            }
             
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
@@ -97,10 +117,18 @@ public class MenuController : MonoBehaviour
             var company3 = Console.ReadLine();
         
             Console.WriteLine("Введите заработную плату:");
-            var salary3 = int.Parse(Console.ReadLine());
+            int salary3;
+            while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
+            {
+            	Console.WriteLine("Некорректная заработная плата. Попробуйте еще раз.");
+            }
         
             Console.WriteLine("Введите опыт работы:");
-            var experience3 = int.Parse(Console.ReadLine());
+            int experience3;
+            while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
+            {
+            	Console.WriteLine("Некорректный опыт работы. Попробуйте еще раз.");
+            }
         
             Console.WriteLine("Введите бренд:");
             var brand = Console.ReadLine();
