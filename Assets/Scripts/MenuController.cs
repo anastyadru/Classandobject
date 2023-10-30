@@ -18,6 +18,7 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(true);
         editPersonPanel.SetActive(false);
         deletePersonPanel.SetActive(false);
+		AddPerson();
     }
 
     public void EditButtonClicked()
@@ -25,6 +26,7 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(false);
         editPersonPanel.SetActive(true);
         deletePersonPanel.SetActive(false);
+		EditPerson();
     }
 
     public void DeleteButtonClicked()
@@ -32,9 +34,10 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(false);
         editPersonPanel.SetActive(false);
         deletePersonPanel.SetActive(true);
+		DeletePerson();
     }
 
-    static void AddPerson(List<Human> people)
+    private void AddPerson()
     {
         Console.WriteLine("Введите фамилию:");
         var surname = Console.ReadLine();
@@ -113,7 +116,7 @@ public class MenuController : MonoBehaviour
     }
         
    
-	static void EditPerson(List<Human> people)
+	private void EditPerson()
     {
         Console.WriteLine("Введите фамилию человека, данные которого хотите изменить:");
         var surnameToEdit = Console.ReadLine();
@@ -132,7 +135,7 @@ public class MenuController : MonoBehaviour
         }
     }
         
-    static void DeletePerson(List<Human> people)
+    private void DeletePerson()
     {
         Console.WriteLine("Введите фамилию человека, данные которого хотите удалить:");
         var surnameToDelete = Console.ReadLine();
