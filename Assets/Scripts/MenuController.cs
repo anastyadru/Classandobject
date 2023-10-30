@@ -118,14 +118,14 @@ public class MenuController : MonoBehaviour
         
             Console.WriteLine("Введите заработную плату:");
             int salary3;
-            while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
+            while (!int.TryParse(Console.ReadLine(), out salary3) || salary3 < 0)
             {
             	Console.WriteLine("Некорректная заработная плата. Попробуйте еще раз.");
             }
         
             Console.WriteLine("Введите опыт работы:");
             int experience3;
-            while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
+            while (!int.TryParse(Console.ReadLine(), out experience3) || experience3 < 0)
             {
             	Console.WriteLine("Некорректный опыт работы. Попробуйте еще раз.");
             }
