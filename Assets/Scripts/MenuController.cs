@@ -54,9 +54,6 @@ public class MenuController : MonoBehaviour
         {
             Console.WriteLine("Некорректный формат даты. Попробуйте еще раз.");
         }
-        
-        Human human = new Human(surname, name, patronymic, birth);
-        people.Add(human);
 
         Console.WriteLine("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
         int personType = int.Parse(Console.ReadLine());
