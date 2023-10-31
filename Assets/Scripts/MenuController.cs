@@ -52,7 +52,7 @@ public class MenuController : MonoBehaviour
         DateTime birth;
         while (!DateTime.TryParse(Console.ReadLine(), out birth))
         {
-            Console.WriteLine("Некорректный формат даты. Попробуйте еще раз.");
+        	Debug.Log("Некорректный формат даты. Попробуйте еще раз.");
         }
 
         Console.WriteLine("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
@@ -67,20 +67,20 @@ public class MenuController : MonoBehaviour
             int course;
             while (!int.TryParse(Console.ReadLine(), out course) || course < 1)
             {
-            	Console.WriteLine("Некорректный курс. Попробуйте еще раз.");
+            	Debug.Log("Некорректный курс. Попробуйте еще раз.");
             }
 
             Console.WriteLine("Введите группу:");
             int group;
             while (!int.TryParse(Console.ReadLine(), out group) || group < 1)
             {
-            	Console.WriteLine("Некорректная группа. Попробуйте еще раз.");
+            	Debug.Log("Некорректная группа. Попробуйте еще раз.");
             }
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
             people.Add(student);
 
-            Console.WriteLine("Данные студента добавлены:\n" + student.Print());
+            Debug.Log("Данные студента добавлены:\n" + student.Print());
         }
         
         else if (personType == 1)
@@ -92,20 +92,20 @@ public class MenuController : MonoBehaviour
             int salary;
             while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
             {
-				Console.WriteLine("Некорректная заработная плата. Попробуйте еще раз.");
+				Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
             }
         
             Console.WriteLine("Введите стаж работы:");
             int experience;
             while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
             {
-            	Console.WriteLine("Некорректный стаж работы. Попробуйте еще раз.");
+            	Debug.Log("Некорректный стаж работы. Попробуйте еще раз.");
             }
             
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
             
-            Console.WriteLine("Данные работника добавлены:\n" + employee.Print());
+            Debug.Log("Данные работника добавлены:\n" + employee.Print());
         }
         
         else if (personType == 2)
@@ -117,14 +117,14 @@ public class MenuController : MonoBehaviour
             int salary3;
             while (!int.TryParse(Console.ReadLine(), out salary3) || salary3 < 0)
             {
-            	Console.WriteLine("Некорректная заработная плата. Попробуйте еще раз.");
+            	Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
             }
         
             Console.WriteLine("Введите опыт работы:");
             int experience3;
             while (!int.TryParse(Console.ReadLine(), out experience3) || experience3 < 0)
             {
-            	Console.WriteLine("Некорректный опыт работы. Попробуйте еще раз.");
+            	Debug.Log("Некорректный опыт работы. Попробуйте еще раз.");
             }
         
             Console.WriteLine("Введите бренд:");
@@ -136,7 +136,7 @@ public class MenuController : MonoBehaviour
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
             people.Add(driver);
 
-            Console.WriteLine("Данные водителя добавлены:\n" + driver.Print());
+        	Debug.Log("Данные водителя добавлены:\n" + driver.Print());
         }
     }
         
@@ -151,12 +151,12 @@ public class MenuController : MonoBehaviour
         if (personToEdit != null)
         {
             personToEdit.Edit();
-            Console.WriteLine("Изменения сохранены");
+        	Debug.Log("Изменения сохранены");
         }
                     
         else
         {
-            Console.WriteLine("Человек с такой фамилией не найден");
+        	Debug.Log("Человек с такой фамилией не найден");
         }
     }
         
@@ -170,12 +170,12 @@ public class MenuController : MonoBehaviour
         if (personToDelete != null)
         {
             people.Remove(personToDelete);
-            Console.WriteLine("Информация о человеке удалена");
+        	Debug.Log("Информация о человеке удалена");
         }
         
         else
         {
-            Console.WriteLine("Человек с такой фамилией не найден");
+        	Debug.Log("Человек с такой фамилией не найден");
         }
     }
 
