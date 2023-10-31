@@ -39,38 +39,38 @@ public class MenuController : MonoBehaviour
 
     private void AddPerson()
     {
-        Console.WriteLine("Введите фамилию:");
+        Debug.Log("Введите фамилию:");
         var surname = Console.ReadLine();
 
-        Console.WriteLine("Введите имя:");
+        Debug.Log("Введите имя:");
         var name = Console.ReadLine();
 
-        Console.WriteLine("Введите отчество:");
+        Debug.Log("Введите отчество:");
         var patronymic = Console.ReadLine();
 
-        Console.WriteLine("Введите дату рождения в формате ДД.ММ.ГГГГ:");
+        Debug.Log("Введите дату рождения в формате ДД.ММ.ГГГГ:");
         DateTime birth;
         while (!DateTime.TryParse(Console.ReadLine(), out birth))
         {
         	Debug.Log("Некорректный формат даты. Попробуйте еще раз.");
         }
 
-        Console.WriteLine("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
+        Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
         int personType = int.Parse(Console.ReadLine());
 
         if (personType == 0)
         {
-            Console.WriteLine("Введите факультет:");
+            Debug.Log("Введите факультет:");
             var faculty = Console.ReadLine();
 
-            Console.WriteLine("Введите курс:");
+            Debug.Log("Введите курс:");
             int course;
             while (!int.TryParse(Console.ReadLine(), out course) || course < 1)
             {
             	Debug.Log("Некорректный курс. Попробуйте еще раз.");
             }
 
-            Console.WriteLine("Введите группу:");
+            Debug.Log("Введите группу:");
             int group;
             while (!int.TryParse(Console.ReadLine(), out group) || group < 1)
             {
@@ -85,17 +85,17 @@ public class MenuController : MonoBehaviour
         
         else if (personType == 1)
         {
-            Console.WriteLine("Введите название компании:");
+            Debug.Log("Введите название компании:");
             var company = Console.ReadLine();
         
-            Console.WriteLine("Введите заработную плату:");
+            Debug.Log("Введите заработную плату:");
             int salary;
             while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
             {
 				Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
             }
         
-            Console.WriteLine("Введите стаж работы:");
+            Debug.Log("Введите стаж работы:");
             int experience;
             while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
             {
@@ -110,27 +110,27 @@ public class MenuController : MonoBehaviour
         
         else if (personType == 2)
         {
-            Console.WriteLine("Введите название компании:");
+            Debug.Log("Введите название компании:");
             var company3 = Console.ReadLine();
         
-            Console.WriteLine("Введите заработную плату:");
+            Debug.Log("Введите заработную плату:");
             int salary3;
             while (!int.TryParse(Console.ReadLine(), out salary3) || salary3 < 0)
             {
             	Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
             }
         
-            Console.WriteLine("Введите опыт работы:");
+            Debug.Log("Введите опыт работы:");
             int experience3;
             while (!int.TryParse(Console.ReadLine(), out experience3) || experience3 < 0)
             {
             	Debug.Log("Некорректный опыт работы. Попробуйте еще раз.");
             }
         
-            Console.WriteLine("Введите бренд:");
+            Debug.Log("Введите бренд:");
             var brand = Console.ReadLine();
         
-            Console.WriteLine("Введите модель:");
+            Debug.Log("Введите модель:");
             var model = Console.ReadLine();
             
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
@@ -143,7 +143,7 @@ public class MenuController : MonoBehaviour
    
 	private void EditPerson()
     {
-        Console.WriteLine("Введите фамилию человека, данные которого хотите изменить:");
+        Debug.Log("Введите фамилию человека, данные которого хотите изменить:");
         var surnameToEdit = Console.ReadLine();
                     
         var personToEdit = people.Find(p => p.Surname == surnameToEdit);
@@ -162,7 +162,7 @@ public class MenuController : MonoBehaviour
         
     private void DeletePerson()
     {
-        Console.WriteLine("Введите фамилию человека, данные которого хотите удалить:");
+        Debug.Log("Введите фамилию человека, данные которого хотите удалить:");
         var surnameToDelete = Console.ReadLine();
                     
         var personToDelete = people.Find(p => p.Surname == surnameToDelete);

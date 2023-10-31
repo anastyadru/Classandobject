@@ -32,22 +32,22 @@ public class Student : Human
         switch (fieldToEdit)
         {
             case 1:
-                Console.WriteLine("Введите новый факультет: ");
+                Debug.Log("Введите новый факультет: ");
                 Faculty = Console.ReadLine();
                 break;
                 
             case 2:
-                Console.WriteLine("Введите новый курс: ");
+                Debug.Log("Введите новый курс: ");
                 Course = int.Parse(Console.ReadLine());
                 break;
                 
             case 3:
-                Console.WriteLine("Введите новую группу: ");
+                Debug.Log("Введите новую группу: ");
                 Group = int.Parse(Console.ReadLine());
                 break;
 
             default:
-                Console.WriteLine("Некорректный ввод");
+                Debug.Log("Некорректный ввод");
                 break;
         }
     }
@@ -55,9 +55,9 @@ public class Student : Human
     public override void Display()
     {
         base.Display();
-        Console.WriteLine($"Факультет: {Faculty}");
-        Console.WriteLine($"Курс: {Course}");
-        Console.WriteLine($"Группа: {Group}");
+        Debug.Log($"Факультет: {Faculty}");
+        Debug.Log($"Курс: {Course}");
+        Debug.Log($"Группа: {Group}");
     }
 
 }

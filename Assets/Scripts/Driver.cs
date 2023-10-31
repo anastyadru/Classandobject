@@ -29,17 +29,17 @@ public sealed class Driver : Employee
         switch (fieldToEdit)
         {
             case 1:
-                Console.WriteLine("Введите новый бренд: ");
+                Debug.Log("Введите новый бренд: ");
                 Brand = Console.ReadLine();
                 break;
                 
             case 2:
-                Console.WriteLine("Введите новую модель: ");
+                Debug.Log("Введите новую модель: ");
                 Model = Console.ReadLine();
                 break;
                 
             default:
-                Console.WriteLine("Некорректный ввод");
+                Debug.Log("Некорректный ввод");
                 break;
         }
     }
@@ -47,8 +47,8 @@ public sealed class Driver : Employee
     public override void Display()
     {
         base.Display();
-        Console.WriteLine($"Бренд: {Brand}");
-        Console.WriteLine($"Модель: {Model}");
+        Debug.Log($"Бренд: {Brand}");
+        Debug.Log($"Модель: {Model}");
     }
 
 }

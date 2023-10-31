@@ -33,22 +33,22 @@ public class Employee : Human
         switch (fieldToEdit)
         {
             case 1:
-                Console.WriteLine("Введите новую компанию: ");
+                Debug.Log("Введите новую компанию: ");
                 Company = Console.ReadLine();
                 break;
                 
             case 2:
-                Console.WriteLine("Введите новую зарплату: ");
+                Debug.Log("Введите новую зарплату: ");
                 Salary = int.Parse(Console.ReadLine());
                 break;
                 
             case 3:
-                Console.WriteLine("Введите новый опыт работы: ");
+                Debug.Log("Введите новый опыт работы: ");
                 Experience = int.Parse(Console.ReadLine());
                 break;
                 
             default:
-                Console.WriteLine("Некорректный ввод");
+                Debug.Log("Некорректный ввод");
                 break;
         }
     }
@@ -56,9 +56,9 @@ public class Employee : Human
     public override void Display()
     {
         base.Display();
-        Console.WriteLine($"Компания: {Company}");
-        Console.WriteLine($"Зарплата: {Salary}");
-        Console.WriteLine($"Опыт работы: {Experience}");
+        Debug.Log($"Компания: {Company}");
+        Debug.Log($"Зарплата: {Salary}");
+        Debug.Log($"Опыт работы: {Experience}");
     }
 
 }

@@ -42,35 +42,35 @@ public class Human : MonoBehaviour
         switch (fieldToEdit)
         {
             case 1:
-                Console.WriteLine("Введите новую фамилию: ");
+                Debug.Log("Введите новую фамилию: ");
                 Surname = Console.ReadLine();
                 break;
                 
             case 2:
-                Console.WriteLine("Введите новое имя: ");
+                Debug.Log("Введите новое имя: ");
                 Name = Console.ReadLine();
                 break;
                 
             case 3:
-                Console.WriteLine("Введите новое отчество: ");
+                Debug.Log("Введите новое отчество: ");
                 Patronymic = Console.ReadLine();
                 break;
                 
             case 4:
-                Console.WriteLine("Введите новую дату рождения: ");
+                Debug.Log("Введите новую дату рождения: ");
                 BirthDate = DateTime.Parse(Console.ReadLine());
                 break;
                 
             default:
-                Console.WriteLine("Некорректный ввод");
+                Debug.Log("Некорректный ввод");
                 break;
         }
     }
 
     public virtual void Display()
     {
-        Console.WriteLine($"ФИО: {Surname} {Name} {Patronymic}");
-        Console.WriteLine($"Возраст: {CalculateAge()}");
+        Debug.Log($"ФИО: {Surname} {Name} {Patronymic}");
+        Debug.Log($"Возраст: {CalculateAge()}");
     }
     
 }
