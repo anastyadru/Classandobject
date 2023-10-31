@@ -111,8 +111,22 @@ public class MenuController : MonoBehaviour
 			Debug.Log("Данные водителя добавлены:\n" + driver.Print());
         }
     }
-        
-   
+
+	public void OnStudentButtonClicked()
+	{
+    	AddPerson();
+	}
+
+	public void OnEmployeeButtonClicked()
+	{
+    	AddPerson();
+	}
+
+	public void OnDriverButtonClicked()
+	{
+    	AddPerson();
+	}
+ 
 	private void EditPerson()
     {
         Debug.Log("Введите фамилию человека, данные которого хотите изменить:");
