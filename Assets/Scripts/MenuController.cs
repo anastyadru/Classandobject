@@ -49,11 +49,7 @@ public class MenuController : MonoBehaviour
         var patronymic = Console.ReadLine();
 
         Debug.Log("Введите дату рождения в формате ДД.ММ.ГГГГ:");
-        DateTime birth;
-        while (!DateTime.TryParse(Console.ReadLine(), out birth))
-        {
-        	Debug.Log("Некорректный формат даты. Попробуйте еще раз.");
-        }
+        var birth = Convert.ToDateTime(Console.ReadLine());
 
         Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
         int personType = int.Parse(Console.ReadLine());
@@ -64,18 +60,10 @@ public class MenuController : MonoBehaviour
             var faculty = Console.ReadLine();
 
             Debug.Log("Введите курс:");
-            int course;
-            while (!int.TryParse(Console.ReadLine(), out course) || course < 1)
-            {
-            	Debug.Log("Некорректный курс. Попробуйте еще раз.");
-            }
+            var course = int.Parse(Console.ReadLine());
 
             Debug.Log("Введите группу:");
-            int group;
-            while (!int.TryParse(Console.ReadLine(), out group) || group < 1)
-            {
-            	Debug.Log("Некорректная группа. Попробуйте еще раз.");
-            }
+            var group = int.Parse(Console.ReadLine());
 
             Student student = new Student(surname, name, patronymic, birth, faculty, course, group);
             people.Add(student);
@@ -89,18 +77,10 @@ public class MenuController : MonoBehaviour
             var company = Console.ReadLine();
         
             Debug.Log("Введите заработную плату:");
-            int salary;
-            while (!int.TryParse(Console.ReadLine(), out salary) || salary < 0)
-            {
-				Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
-            }
+            var salary = int.Parse(Console.ReadLine());
         
             Debug.Log("Введите стаж работы:");
-            int experience;
-            while (!int.TryParse(Console.ReadLine(), out experience) || experience < 0)
-            {
-            	Debug.Log("Некорректный стаж работы. Попробуйте еще раз.");
-            }
+            var experience = int.Parse(Console.ReadLine());
             
             Employee employee = new Employee(surname, name, patronymic, birth, company, salary, experience);
             people.Add(employee);
@@ -114,18 +94,10 @@ public class MenuController : MonoBehaviour
             var company3 = Console.ReadLine();
         
             Debug.Log("Введите заработную плату:");
-            int salary3;
-            while (!int.TryParse(Console.ReadLine(), out salary3) || salary3 < 0)
-            {
-            	Debug.Log("Некорректная заработная плата. Попробуйте еще раз.");
-            }
+            var salary3 = int.Parse(Console.ReadLine());
         
             Debug.Log("Введите опыт работы:");
-            int experience3;
-            while (!int.TryParse(Console.ReadLine(), out experience3) || experience3 < 0)
-            {
-            	Debug.Log("Некорректный опыт работы. Попробуйте еще раз.");
-            }
+            var experience3 = int.Parse(Console.ReadLine());
         
             Debug.Log("Введите бренд:");
             var brand = Console.ReadLine();
@@ -136,7 +108,7 @@ public class MenuController : MonoBehaviour
             Driver driver = new Driver(surname, name, patronymic, birth, company3, salary3, experience3, brand, model);
             people.Add(driver);
 
-        	Debug.Log("Данные водителя добавлены:\n" + driver.Print());
+			Debug.Log("Данные водителя добавлены:\n" + driver.Print());
         }
     }
         
@@ -150,7 +122,7 @@ public class MenuController : MonoBehaviour
 
         if (personToEdit != null)
         {
-            personToEdit.Edit();
+        	personToEdit.Edit();
         	Debug.Log("Изменения сохранены");
         }
                     
@@ -169,7 +141,7 @@ public class MenuController : MonoBehaviour
 
         if (personToDelete != null)
         {
-            people.Remove(personToDelete);
+        	people.Remove(personToDelete);
         	Debug.Log("Информация о человеке удалена");
         }
         
