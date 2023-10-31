@@ -200,3 +200,23 @@ Received Import Request.
   path: Assets/Scripts/MenuController.cs
   artifactKey: Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/MenuController.cs using Guid(7e66db67855083f4e9695e602173a2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4b50d18ddb7f48e6dbe1ed7ba066ea') in 0.026078 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.584 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2669 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3142.
+Total: 12.658900 ms (FindLiveObjects: 0.388100 ms CreateObjectMapping: 0.398400 ms MarkObjects: 11.764000 ms  DeleteObjects: 0.105100 ms)
+
