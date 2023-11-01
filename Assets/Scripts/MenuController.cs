@@ -114,18 +114,37 @@ public class MenuController : MonoBehaviour
 
 	public void OnStudentButtonClicked()
 	{
-    	AddPerson();
+    	foreach (var person in people)
+    	{
+        	if (person is Student)
+        	{
+            	PrintStudentData((Student)person);
+        	}
+    	}
 	}
 
 	public void OnEmployeeButtonClicked()
 	{
-    	AddPerson();
+    	foreach (var person in people)
+    	{
+        	if (person is Employee)
+        	{
+            	PrintEmployeeData((Employee)person);
+        	}
+    	}
 	}
 
 	public void OnDriverButtonClicked()
 	{
-    	AddPerson();
+    	foreach (var person in people)
+    	{
+        	if (person is Driver)
+        	{
+            	PrintDriverData((Driver)person);
+        	}
+    	}
 	}
+
  
 	private void EditPerson()
     {
