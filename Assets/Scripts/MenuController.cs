@@ -37,7 +37,7 @@ public class MenuController : MonoBehaviour
 		DeletePerson();
     }
 
-    private void AddPerson()
+    private void AddPerson(int personType)
     {
         Debug.Log("Введите фамилию:");
         var surname = Console.ReadLine();
@@ -51,8 +51,8 @@ public class MenuController : MonoBehaviour
         Debug.Log("Введите дату рождения в формате ДД.ММ.ГГГГ:");
         var birth = Convert.ToDateTime(Console.ReadLine());
 
-        Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
-        int personType = int.Parse(Console.ReadLine());
+        // Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
+        // int personType = int.Parse(Console.ReadLine());
 
         if (personType == 0)
         {
@@ -114,37 +114,21 @@ public class MenuController : MonoBehaviour
 
 	public void OnStudentButtonClicked()
 	{
-    	foreach (var person in people)
-    	{
-        	if (person is Student)
-        	{
-            	PrintStudentData((Student)person);
-        	}
-    	}
+    	Debug.Log("Добавление студента:");
+    	AddPerson(0);
 	}
 
 	public void OnEmployeeButtonClicked()
 	{
-    	foreach (var person in people)
-    	{
-        	if (person is Employee)
-        	{
-            	PrintEmployeeData((Employee)person);
-        	}
-    	}
+    	Debug.Log("Добавление работника:");
+    	AddPerson(1);
 	}
 
 	public void OnDriverButtonClicked()
 	{
-    	foreach (var person in people)
-    	{
-        	if (person is Driver)
-        	{
-            	PrintDriverData((Driver)person);
-        	}
-    	}
+    	Debug.Log("Добавление водителя:");
+    	AddPerson(2);
 	}
-
  
 	private void EditPerson()
     {
