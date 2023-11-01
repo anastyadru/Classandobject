@@ -51,7 +51,7 @@ public class MenuController : MonoBehaviour
         Debug.Log("Введите дату рождения в формате ДД.ММ.ГГГГ:");
         var birth = Convert.ToDateTime(Console.ReadLine());
 
-        // Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
+        Debug.Log("Выберите тип человека (0 - студент, 1 - работник, 2 - водитель):");
         // int personType = int.Parse(Console.ReadLine());
 
         if (personType == 0)
