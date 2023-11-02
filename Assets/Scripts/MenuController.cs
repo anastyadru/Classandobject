@@ -110,6 +110,8 @@ public class MenuController : MonoBehaviour
 
 			Debug.Log("Данные водителя добавлены:\n" + driver.Print());
         }
+        
+        Application.Quit();
     }
 
 	void OnStudentButtonClicked()
@@ -147,6 +149,8 @@ public class MenuController : MonoBehaviour
         {
         	Debug.Log("Человек с такой фамилией не найден");
         }
+        
+        Application.Quit();
     }
         
     private void DeletePerson()
@@ -166,6 +170,8 @@ public class MenuController : MonoBehaviour
         {
         	Debug.Log("Человек с такой фамилией не найден");
         }
+        
+        Application.Quit();
     }
 
 }
