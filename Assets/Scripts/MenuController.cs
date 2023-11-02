@@ -18,7 +18,7 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(true);
         editPersonPanel.SetActive(false);
         deletePersonPanel.SetActive(false);
-		// AddPerson();
+		AddPerson();
     }
 
     public void EditButtonClicked()
@@ -26,7 +26,7 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(false);
         editPersonPanel.SetActive(true);
         deletePersonPanel.SetActive(false);
-		// EditPerson();
+		EditPerson();
     }
 
     public void DeleteButtonClicked()
@@ -34,7 +34,7 @@ public class MenuController : MonoBehaviour
         addPersonPanel.SetActive(false);
         editPersonPanel.SetActive(false);
         deletePersonPanel.SetActive(true);
-		// DeletePerson();
+		DeletePerson();
     }
 
     private void AddPerson()
@@ -69,7 +69,6 @@ public class MenuController : MonoBehaviour
             people.Add(student);
 
             Debug.Log("Данные студента добавлены:\n" + student.Print());
-			DisplayPerson(student);
         }
         
         else if (personType == 1)
@@ -87,7 +86,6 @@ public class MenuController : MonoBehaviour
             people.Add(employee);
             
             Debug.Log("Данные работника добавлены:\n" + employee.Print());
-			DisplayPerson(employee);
         }
         
         else if (personType == 2)
@@ -111,14 +109,7 @@ public class MenuController : MonoBehaviour
             people.Add(driver);
 
 			Debug.Log("Данные водителя добавлены:\n" + driver.Print());
-			DisplayPerson(driver);
         }
-    }
-
-	private void DisplayPerson(Human person)
-    {
-        Debug.Log("Данные человека:\n" + person.Print());
-        person.Display();
     }
 
 	void OnStudentButtonClicked()
